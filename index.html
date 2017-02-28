@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Maze</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div id="view">
+        <table>
+            <tr>
+                <td class="tile_container01">
+                    <img id="tile_ul_player" class="player" src="tiles/empty.png" />
+                    <img id="tile_center_up_left" class="tile_center" src="tiles/empty.png" />
+                </td>
+                <td class="tile_container02">
+                    <img id="tile_u_player" class="player" src="tiles/empty.png" />
+                    <img id="tile_center_up" class="tile_center" src="tiles/empty.png" />
+                </td>
+                <td class="tile_container03">
+                    <img id="tile_ur_player" class="player" src="tiles/empty.png" />
+                    <img id="tile_center_up_right" class="tile_center" src="tiles/empty.png" />
+                </td>
+            </tr>
+            <tr>
+                <td class="tile_container11">
+                    <img id="tile_cl_player" class="player" src="tiles/empty.png" />
+                    <img id="tile_center_left" class="tile_center" src="tiles/empty.png" />
+                </td>
+                <td class="tile_container12">
+                    <img id="tile_center" class="tile_center" src="tiles/empty.png" />
+                    <img class="player" src="player.png">
+                </td>
+                <td class="tile_container13">
+                    <img id="tile_cr_player" class="player" src="tiles/empty.png" />
+                    <img id="tile_center_right" class="tile_center" src="tiles/empty.png" />
+                </td>
+            </tr>
+            <tr>
+                <td class="tile_container21">
+                    <img id="tile_dl_player" class="player" src="tiles/empty.png" />
+                    <img id="tile_center_down_left" class="tile_center" src="tiles/empty.png" />
+                </td>
+                <td class="tile_container22">
+                    <img id="tile_d_player" class="player" src="tiles/empty.png" />
+                    <img id="tile_center_down" class="tile_center" src="tiles/empty.png" />
+                </td>
+                <td class="tile_container23">
+                    <img id="tile_dr_player" class="player" src="tiles/empty.png" />
+                    <img id="tile_center_down_right" class="tile_center" src="tiles/empty.png" />
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="game_log_div">
+        <div class="container">
+            <div class="panel panel-info">
+                <div class="panel-title">
+                </div>
+                <div class="panel-body" id="chat_history">
+                    <ul id="game_log" class="media-list">
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="jquery.min.js"></script>
+    <script src="game.js"></script>
+    <script src="client.js"></script>
+</body>
+</html>

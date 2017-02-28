@@ -1,0 +1,91 @@
+body {
+    background-color: #ccc;
+}
+#view {
+    width: 192px;
+    padding: 128px 0;
+    margin: auto auto;
+}
+#view table, tr, td, th {
+    border-collapse: collapse;
+    border-spacing: 0;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+img {
+    width: 64px;
+    height: 64px;
+}
+table {
+    position: relative;
+}
+tr {
+    position: relative;
+    width: 192px;
+    height: 64px;
+}
+tr td.tile_container01 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+tr td.tile_container02 {
+    position: absolute;
+    top: 0;
+    left: 64px;
+}
+tr td.tile_container03 {
+    position: absolute;
+    top: 0;
+    left: 128px;
+}
+tr td.tile_container11 {
+    position: absolute;
+    top: 64px;
+    left: 0;
+}
+tr td.tile_container12 {
+    position: absolute;
+    top: 64px;
+    left: 64px;
+}
+tr td.tile_container13 {
+    position: absolute;
+    top: 64px;
+    left: 128px;
+}
+tr td.tile_container21 {
+    position: absolute;
+    top: 128px;
+    left: 0;
+}
+tr td.tile_container22 {
+    position: absolute;
+    top: 128px;
+    left: 64px;
+}
+tr td.tile_container23 {
+    position: absolute;
+    top: 128px;
+    left: 128px;
+}
+
+.tile_center {
+    z-index: 1;
+    position: absolute;
+}
+
+.player {
+    height: 60px;
+    width: auto;
+    padding-left: 11px;
+    padding-top: 2px;
+    z-index: 2;
+    position: absolute;
+}
+#chat_history {
+    max-height: 256px;
+    overflow-y: auto;
+}
